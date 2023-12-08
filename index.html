@@ -1,0 +1,201 @@
+<!--
+  Title: Phuong Tran - Personal Portfolio
+  File Name: index.html
+  Author: Phuong Tran
+  Date: 12/05/2023
+  Description: Personal portfolio with school's projects.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/site.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <title>Phuong Tran- Web Developer</title>
+  </head>
+
+  <!-- Navbar and Footer Scripts -->
+  <script src="header.js"></script>
+  <script src="footer.js"></script>
+
+<body>
+  <!-- Navbar component -->
+  <header-component></header-component>
+
+  <!-- About Me -->
+  <section id="about" class="text-center py-5">
+    <div class="container">  <!-- start div container -->
+      <h2 class="section-title">About Me</h2>
+        <div class="bottom-line"></div>  <!-- the bottom line -->
+        <!-- myself -->
+      <div class="about-info">
+       <div class="image-content"><img src="./images/profile.PNG" class="about-image"></div>
+       <div class="bio-content">
+        <p class="lead">Hi, I'm <span class="current-color">Phuong Tran,</span><br>
+        A <span class="current-org">Full Stack Web Developer</span> passionate about designing and creating Interactive applications and experencing on the web.
+          For every line of the code, I strive to make the web a beautiful place.</p>
+        <p class="lead"><strong>Things I've learned:</strong> HTML5, CSS3, SASS, LESS, BOOSTRAP5, VUE.JS, JAVASCRIPT, NODE.JS, MONGODB, JQUERY, WORDPRESS, GitHub,
+          PHP, MySQL Database. </p>
+
+        <br>
+        <p class="lead"><strong>Tools I use:</strong> Visual Studio Code, Github, npm, Chrome Developer Tools.</p>
+        </div>
+      </div>
+    </div>  <!-- end div container -->
+</section>
+
+ <!--My Work -->
+ <section id="work" class="text-center py-5">
+    <div class="container">   <!-- container div -->
+      <h2 class="section-title">My Work</h2>
+      <div class="bottom-line"></div>
+    
+      <div class="grid-row">
+        <!-- start items div -->
+        <div class="items">
+           <!-- item1 -->
+          <div class="item">
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">HTML-CSS</p>
+                <h2 class="item-text-title">BioSite</h2>
+                <div class="mt-1">
+                <a href="https://ptran999.github.io/QuyTran-BioSite-week9/" target="_blank" class="btn btn-work">Demo</a>
+                <a href="https://github.com/ptran999/QuyTran-BioSite-week9" target="_blank" class="btn btn-work mr-1">Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- item2 -->
+          <div class="item">
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">WEB-231</p>
+                <h2 class="item-text-title">JavaScript-I</h2>
+                <div class="mt-1">
+                  <a href="" target="_blank" class="btn btn-work">Demo</a>
+                  <a href="https://github.com/ptran999/web-231" target="_blank" class="btn btn-work mr-1">Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- item3 -->
+          <div class="item">
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">WEB-330</p>
+                <h2 class="item-text-title">JavaScript-II</h2>
+                <div class="mt-1">
+                  <a href="https://ptran999.github.io/web-330/" target="_blank" class="btn btn-work">Demo</a>
+                  <a href="https://github.com/ptran999/web-330/tree/master" target="_blank" class="btn btn-work mr-1">Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+             <!-- item4 -->
+             <div class="item">
+              <div class="item-text">
+                <div class="item-text-wrap">
+                  <p class="item-text-category">WEB-335</p>
+                  <h2 class="item-text-title">Introduction to NoSQL</h2>
+                  <div class="mt-1">
+                    <a href="" target="_blank" class="btn btn-work">Demo</a>
+                    <a href="" target="_blank" class="btn btn-work mr-1">Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- item5 -->
+            <div class="item">
+              <div class="item-text">
+                <div class="item-text-wrap">
+                  <p class="item-text-category">WEB-420</p>
+                  <h2 class="item-text-title">RestFul APIs</h2>
+
+                  <div class="mt-1">
+                    <a href="" target="_blank" class="btn btn-work">Demo</a>
+                    <a href="" target="_blank" class="btn btn-work mr-1">Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- item6 -->
+            <div class="item">
+              <div class="item-text">
+                <div class="item-text-wrap">
+                  <p class="item-text-category">Web...</p>
+                  <h2 class="item-text-title">More to come..</h2>
+                  <div class="mt-1">
+                    <a href="" target="_blank" class="btn btn-work">Demo</a>
+                    <a href="" target="_blank" class="btn btn-work mr-1">Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+      </div>  <!-- end items div -->
+    </div> <!-- end items grid-rows -->
+  </div> <!-- end container -->
+</section>
+
+ <!-- Contact -->
+ <section id="contact" class="text-center py-5">
+  <div class="container">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="bottom-line"></div>
+    <p class="lead">I am free for coffee</p>
+    <form method="POST">
+      <div class="form-control">
+        <input
+          type="text"
+          class="text-input name-input"
+          placeholder="Name"
+          name="name"
+        />
+        <input
+          type="text"
+          class="text-input subject-input"
+          placeholder="Subject"
+          name="subject"
+        />
+        <input
+          type="email"
+          class="text-input email-input"
+          placeholder="Email Address"
+          name="email"
+        />
+        <input
+          type="text"
+          class="text-input phone-input"
+          placeholder="Phone Number"
+          name="phone"
+        />
+        <textarea
+          class="text-input message-input"
+          placeholder="Enter Message"
+          name="message"
+        ></textarea>
+        <button type="submit"  class="btn btn-submit">Submit</button>
+    </form>
+   </div>
+</section>
+
+<!-- Footer Component -->
+<footer-component></footer-component>
+
+</body>
+</html>
