@@ -1,7 +1,7 @@
 /* 
     Title:  Navbar
-    File Name: navbar.js
-    Author: Phuong Tran - 
+    File Name: header.js
+    Author: Phuong Tran
     Date: 12/07/2023
     Description: Personal portfolio with school's projects.
     Resources: https://github.com/buwebdev/web-330/blob/master/week-5/houses/header-component.js
