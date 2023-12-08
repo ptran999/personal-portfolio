@@ -1,2 +1,2 @@
 # personal-portfolio
-** Phuong Tran
+## Phuong Tran
