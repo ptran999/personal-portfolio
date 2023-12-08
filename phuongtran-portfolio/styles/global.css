@@ -1,0 +1,105 @@
+/*
+Title: global.css
+Author: Phuong Tran
+Date: 12/05/2023
+Description: Global Styling for portfolio website. 
+Source:  https://stackoverflow.com/questions/20751937/transition-background-color-via-slide-animation 
+Color Palette: #440d20, #592133, #89515d, #dfbcc6, #f7eaef, #333, #fff,
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+:root {
+    --dark-burgundy: #440d20;
+    --medium-burgundy: #592133;
+    --light-burgundy: #89515d;
+    --pink: #dfbcc6;
+    --light-pink: #f7eaef;
+    --grey: #333;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-pink);
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mr-1 {
+    margin-right: 8px;
+
+}
+
+.mt-1 {
+    margin-top: 0.8rem;
+    text-align: center;
+}
+
+.py-5 {
+    padding-top: 5rem;
+ }
+
+.text-center {
+    text-align: center;
+}
+
+.current-color {
+    color: var(--dark-burgundy);
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+/* styling for buttons */
+.btn {
+    display: inline-block;
+    padding: 11px 20px;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-light {
+    margin-top: 1.5rem;
+}
+
+.btn-work {
+    color: var(--white);
+    background-color: var(--light-burgundy);
+    outline-color: var(--dark-burgundy);
+}
+.btn-work:hover {
+    border: 1px solid var(--medium-burgundy);
+    color: var(--dark-burgundy);
+    background-color: var(--pink);
+}
+
+.btn-light,
+.btn-submit {
+    color: var(--white);
+    background: var(--medium-burgundy);
+}
+
+.btn-light:hover,
+.btn-submit:hover {
+    color: var(--dark-burgundy);
+    background: var(--white);
+}
+

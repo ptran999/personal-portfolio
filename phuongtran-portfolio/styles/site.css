@@ -1,0 +1,258 @@
+/*
+Title: site.css
+Author: Phuong Tran
+Date: 12/05/2023
+Description: Styling for portfolio website
+Source:  https://stackoverflow.com/questions/20751937/transition-background-color-via-slide-animation 
+Color Palette: #440d20, #592133, #89515d, #dfbcc6, #f7eaef, #333, #fff
+*/
+
+#header {
+    background-image:  url(../images/orangecountybeach.webp) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+/* styling for navbar */
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    position: relative;
+    z-index: 100;
+}
+
+#main-nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+#main-nav li {
+    padding: 16px 24px;
+}
+
+#main-nav ul li a {
+    color: var(--medium-burgundy);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+}
+
+#main-nav ul li a:hover {
+    border-color: var(--light-pink);
+}
+
+#main-nav a.current {
+    border-color: var(--light-pink);
+}
+
+#main-nav #nav-brand {
+    font-size: 2.5rem;
+}
+
+.nav-brand {
+    text-decoration: none;
+}
+
+/* styling for header content */
+#header .header-content {
+    display: grid;
+    justify-content: center;
+    width: 700px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 18%;
+    position: relative;
+    z-index: 100;
+    text-align: center;
+}
+
+#header .header-content p {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: var(--white);
+}
+
+/* styling for section  */
+#about, #work {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.section-title {
+    font-size: 1.6rem;
+    display: block;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    color: var(--medium-burgundy);
+    font-weight: 100;
+    text-transform: uppercase; 
+}
+      
+.bottom-line {
+    height: 2px;
+    width: 3rem;
+    background: #333;
+    opacity: 0.5;
+    display: block;
+    margin: 0 auto 1rem auto; 
+}
+
+/* About */
+#about {
+    background-color: var(--white);
+}
+
+#about  .about-info  {
+    margin-top:2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.4rem;
+}
+
+#about .about-info .about-image
+ { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1 / span 2;
+}
+
+#about .about-info .bio-content {
+    grid-column: 2 / span 2;
+    border-left: 3px solid var(--light-burgundy);
+    padding: 3rem; 
+}
+
+.bio-content {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--light-burgundy);
+}
+
+.about-image {
+    width: 85%;
+    height: 100%;
+}
+
+.image-content {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+}
+
+/* Work */
+#work {
+    background-color: var(--light-burgundy);
+}
+
+#work .section-title {
+    color: var(--light-pink);
+}
+
+#work .items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1.8rem;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+ }
+ 
+ /* animation for item in work part */
+#work .item {
+    background: var(--light-pink);
+    overflow: hidden;
+    border-radius: 5px;
+    height: 260px;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, var(--light-pink) 50%, var(--white) 50%);
+    -webkit-transition: background-position 1s;
+    -moz-transition: background-position 1s;
+    transition: background-position 1s;
+ }
+
+#work .item:hover {
+    background-position: 0 -100%;
+}
+
+#work .item-text-category {
+    padding-top: 3rem;
+    color: var(--medium-burgundy);
+    text-align: center;
+}
+
+#work .item-text-title {
+    color: var(--dark-burgundy);
+    text-align: center;
+    padding: 1rem;
+}
+  
+
+/* styling for Contact Form */
+#contact .form-control {
+    display: grid;
+    grid-template-areas: 'name email' 'subject phone' 'message message' 'button button';
+    grid-gap: 1.2rem;
+    margin-bottom: 1.2rem;
+ }
+
+#contact .form-control .name-input {
+    grid-area: name;
+ }
+#contact .form-control .subject-input {
+    grid-area: subject; 
+}
+#contact .form-control .email-input {
+    grid-area: email; 
+}
+#contact .form-control .phone-input {
+    grid-area: phone;
+ }
+#contact .form-control .message-input {
+    grid-area: message;
+    height: 100px;
+ }
+#contact .form-control .text-input {
+    padding: 0.5rem 1rem; 
+}
+#contact .form-control button {
+    grid-area: button;
+}
+#contact button[type='submit'] {
+    margin: 1.5rem  auto;
+    width: 50%;
+}
+
+/* styling Footer */
+#main-footer {
+    background: var(--grey);
+    color: var(--white);
+    height: 5rem; }
+
+#main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center; }
+
+#main-footer .footer-content .social .fab {
+    margin-right: 1rem;
+    border: 2px var(--white) solid;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0.5rem;
+ }
+
+#main-footer .footer-content .social .fab:hover {
+    background: var(--medium-burgundy); 
+
+}
